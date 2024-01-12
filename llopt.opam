@@ -1,0 +1,15 @@
+opam-version: "1.2"
+version: "1.0.1~"
+license: "MIT"
+maintainer: "ethi <eth@cock.li>"
+authors: "ethi <eth@cock.li>"
+homepage: "https://github.com/ethirical/ir"
+dev-repo: "git://github.com/ethirical/ir.git"
+bug-reports: "https://github.com/ethirical/ir/issues
+tags: ["llvm" "optimization""compiler"]
+build: ["dune" "build" "-p" name "-j" jobs]
+depends: [
+  "dune" {build}
+  "llvm" {>= "3.5"}
+  "cmdliner"
+]
